@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "qubovert-poetry"
+version = "1.2.5"
+description = "A package for formulating, simulating, and solving problems in boolean and spin form"
+authors = ["Joseph T. Iosue <jtiosue@gmail.com>"]
+license = "Apache Software License 2.0"
+readme = "README.rst"
+packages = [{include = "qubovert"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1"
+
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^68.2.2"
+codecov = "^2.1.13"
+pydocstyle = "^6.3.0"
+pytest = "^6"
+pytest-codestyle = "^2.0.1"
+pytest-cov = "^4.1.0"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^6"
+sphinx-rtd-theme = "^1.3.0"
+sympy = "^1.12"
+
+[build-system]
+requires = ["poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true

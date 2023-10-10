@@ -24,8 +24,6 @@ functions, ``qubovert.sat.__all__`` for the satisfiability library, and
 
 """
 
-from ._version import *
-
 from . import utils
 
 from ._qubo import *
